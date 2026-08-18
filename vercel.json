@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "dse-learning-hub/server.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/dse-learning-hub/server.js" },
+    { "src": "/(.*)", "dest": "/dse-learning-hub/index.html" }
+  ]
+}
